@@ -1,15 +1,13 @@
 # ALGYANオリジナルJetbot
 
-> Interested in making projects like this with Jetson Nano?  Check out the [webinar](https://info.nvidia.com/ai-for-makers-learn-with-jetbot-reg-page.html?nvid=nv-int-84114) we released on 5/16/2019!  
+<img src="https://github.com/greennote-inc/algyanjetbot/wiki/images/algyan-jetbot_1600x1200.jpg" height="256">
 
-<img src="../..//wiki/images/algyan-jetbot_1600x1200.jpg" height="256">
+JetbotはNVIDIA Jetson Nanoベースのオープンソースロボットです。
+このリポジトリでは、ALGYANメンバーによって開発された改良版Jetbotに関する情報を提供します。
+オリジナルのJetbotに比べ、以下のような特徴があります。
 
-JetBot is an open-source robot based on NVIDIA Jetson Nano that is
+* **組み立てが簡単** - モーターの組み付けを除き、一切ネジ止めの必要がありません。
+* **入手が容易** - 学習用キットとして市販され（てい）ます。
+* **教材として使いやすい** - 限られた時間、環境の中でも使いやすくなっています。
 
-* **Affordable** - Less than $150 add-on to Jetson Nano
-* **Educational** - Tutorials from basic motion to AI based collision avoidance
-* **Fun!** - Interactively programmed from your web browser
-
-Building and using JetBot gives the hands on experience needed to create entirely new AI projects.
-
-To get started, read the [JetBot Wiki](https://github.com/NVIDIA-AI-IOT/jetbot/wiki).
+始めるには[ALGYAN JetBot Wiki](https://github.com/greennote-inc/algyanjetbot/wiki)をクリックしてください。
