@@ -1,0 +1,22 @@
+--- /usr/local/lib/python3.6/dist-packages/Adafruit_MotorHAT-1.4.0-py3.6.egg/Adafruit_MotorHAT/Adafruit_MotorHAT_Motors.py	2019-03-25 07:48:51.839663181 +0900
++++ Adafruit_MotorHAT_Motors.py	2019-07-17 14:14:43.943559672 +0900
+@@ -172,13 +172,13 @@ class Adafruit_DCMotor:
+         pwm = in1 = in2 = 0
+ 
+         if (num == 0):
+-                 pwm = 8
+-                 in2 = 9
+-                 in1 = 10
++                 pwm = 5
++                 in2 = 4
++                 in1 = 3
+         elif (num == 1):
+-                 pwm = 13
+-                 in2 = 12
+-                 in1 = 11
++                 pwm = 0
++                 in2 = 1
++                 in1 = 2
+         elif (num == 2):
+                  pwm = 2
+                  in2 = 3

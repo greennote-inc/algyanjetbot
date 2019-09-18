@@ -47,9 +47,11 @@ class Camera(SingletonConfigurable):
                 break
                 
     def _gst_str(self):
-        return 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=%d, height=%d, format=(string)NV12, framerate=(fraction)%d/1 ! nvvidconv ! video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! videoconvert ! appsink' % (
-                self.capture_width, self.capture_height, self.fps, self.width, self.height)
-    
+        # return 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=%d, height=%d, format=(string)NV12, framerate=(fraction)%d/1 ! nvvidconv ! video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! videoconvert ! appsink' % (
+        #         self.capture_width, self.capture_height, self.fps, self.width, self.height)
+        return 'v4l2src device=/dev/video0 ! video/x-raw, width=640, height=480 ! nvvidconv ! video/x-raw, width=(INT)%d, height=(INT)%d, format=(string)BGRx, framerate=(fraction)21/1 ! videoconvert ! appsink' % (
+                self.width, self.height)
+
     def start(self):
         if not self.cap.isOpened():
             self.cap.open(self._gst_str(), cv2.CAP_GSTREAMER)
