@@ -12,9 +12,9 @@ build_libs()
 
 
 setup(
-    name='jetbot',
-    version='0.3.0',
-    description='An open-source robot based on NVIDIA Jetson Nano',
+    name='algyan jetbot',
+    version='0.3.0a',
+    description='ALGYAN AI Study Kit based on NVIDIA Jetbot and Jetson Nano',
     packages=find_packages(),
     install_requires=[
         'Adafruit_MotorHat',
