@@ -12,7 +12,7 @@ build_libs()
 
 
 setup(
-    name='algyan jetbot',
+    name='jetbot',
     version='0.3.0a',
     description='ALGYAN AI Study Kit based on NVIDIA Jetbot and Jetson Nano',
     packages=find_packages(),
